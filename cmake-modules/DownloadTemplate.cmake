@@ -3,9 +3,10 @@ function(DOWNLOAD_TEMPLATE url md5 dst )
 ENDFUNCTION(DOWNLOAD_TEMPLATE)
 
 function(UNPACK_AND_INSTALL_TEMPLATE archive name)
+
   add_custom_target( 
     unpack_${name} ALL
-    unzip -f -o ${archive} -d ${CMAKE_CURRENT_BINARY_DIR}/${name}
+    unzip -u -o ${archive} -d ${CMAKE_CURRENT_BINARY_DIR}/${name}
     DEPENDS ${archive}
     WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
     COMMENT "Unpacking ${name}" VERBATIM
