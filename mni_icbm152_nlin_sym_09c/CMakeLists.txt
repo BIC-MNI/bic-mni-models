@@ -4,7 +4,7 @@ SET(MNI_ICBM152_09C_URL "http://www.bic.mni.mcgill.ca/~vfonov/icbm/2009/mni_icbm
 
 
 DOWNLOAD_TEMPLATE(${MNI_ICBM152_09C_URL} 
- "dcaa4de940a9ec5028e63ee5b3699b48" 
+ "31f6fb8031a7efa7d4031b578944ceb5" 
  "${CMAKE_CURRENT_BINARY_DIR}/mni_icbm152_nlin_sym_09c_minc2.zip"  )
 
 
